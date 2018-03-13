@@ -45,7 +45,7 @@ def over?(board)
   draw?(board) || won?(board)
 end
 
-def winner?(board)
+def winner(board)
   if over?(board)
     if !draw?(board)
       winning_array = won?(board)
