@@ -37,3 +37,13 @@ end
 def full?(board)
   !board.include?(" ")
 end
+
+def draw?(board)
+  !won?(board) && full?(board)
+end
+
+def over?(board)
+end
+
+def winner?(board)
+end
