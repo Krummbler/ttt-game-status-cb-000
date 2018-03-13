@@ -28,5 +28,8 @@ def won?(board)
     if position_1 == position_2 && position_2 == position_3 && position_1 != " "
       return combo
     end
+    if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+      return false
+    end
   end
 end
