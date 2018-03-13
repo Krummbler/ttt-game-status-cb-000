@@ -46,4 +46,8 @@ def over?(board)
 end
 
 def winner?(board)
+  if over?(board)
+    if !draw?(board)
+      winning_array = won?(board)
+      return winning_array[0]
 end
